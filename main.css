@@ -5,10 +5,39 @@
     font-family: Arial, sans-serif;
 }
 
+/* Mangrove Header Styles */
+.mangrove-header {
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.header-content {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.header-subtitle {
+    font-size: 1.1em;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
 body {
-    background: #f5f5f5;
+    background: url(back.jpg) no-repeat center center fixed;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px;
