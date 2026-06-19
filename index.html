@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="text-section">
+            <h1>Features</h1>
+
+            <ul class="feature-list">
+                <li class="active" onclick="changeImage(0, this)">
+                    Map
+                </li>
+
+                <li onclick="changeImage(1, this)">
+                    1. Management Interview
+                </li>
+
+                <li onclick="changeImage(2, this)">
+                    2. Air Sample 1
+                </li>
+
+                <li onclick="changeImage(3, this)">
+                    3. Air Sample 2
+                </li>
+
+                <li onclick="changeImage(4, this)">
+                    4.Air Sample 3
+                </li>
+                <li onclick="changeImage(5, this)">
+                    5. Air Sample 4
+                </li>
+
+                <li onclick="changeImage(6, this)">
+                    6. Air Sample 5
+                </li>
+
+                <li onclick="changeImage(7, this)">
+                    7. Air Sample 6
+                </li>
+
+                <li onclick="changeImage(8, this)">
+                    8. Processing Area
+                </li>
+
+                <li onclick="changeImage(9, this)">
+                    9. Water Sample 1
+                </li>
+
+                <li onclick="changeImage(10, this)">
+                    10. Water Sample 2
+                </li>
+
+                <li onclick="changeImage(11, this)">
+                    11. Eco Bag
+                </li>
+
+                <li onclick="changeImage(12, this)">
+                    12. Planting Mangrove
+                </li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <img
+                id="mainImage"
+                src="image/map.png"
+                alt="Feature Image"
+                onclick="openModal()"
+            >
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modalImage" alt="Enlarged Image">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
