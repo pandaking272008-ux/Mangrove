@@ -16,14 +16,20 @@ const images = [
 
 function changeImage(index, element) {
     const mainImage = document.getElementById("mainImage");
+    const select = document.getElementById("featureSelect");
+    const listItems = document.querySelectorAll(".feature-list li");
 
     mainImage.src = images[index];
 
-    document
-        .querySelectorAll(".feature-list li")
-        .forEach(item => item.classList.remove("active"));
+    listItems.forEach(item => item.classList.remove("active"));
 
-    element.classList.add("active");
+    if (element && element.tagName === "LI") {
+        element.classList.add("active");
+        select.value = index;
+    } else if (select) {
+        select.value = index;
+        listItems[index].classList.add("active");
+    }
 }
 
 function openModal() {

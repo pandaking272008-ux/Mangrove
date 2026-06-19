@@ -14,11 +14,30 @@
             <p class="header-subtitle">Exploring Coastal Ecosystems</p>
         </div>
     </header>
-    
+
     <div class="container">
 
         <div class="text-section">
             <h1>Features</h1>
+
+            <div class="feature-select-wrapper">
+                <label for="featureSelect" class="feature-select-label">Choose a feature</label>
+                <select id="featureSelect" onchange="changeImage(this.value, this)">
+                    <option value="0">Map</option>
+                    <option value="1">1. Management Interview</option>
+                    <option value="2">2. Air Sample 1</option>
+                    <option value="3">3. Air Sample 2</option>
+                    <option value="4">4. Air Sample 3</option>
+                    <option value="5">5. Air Sample 4</option>
+                    <option value="6">6. Air Sample 5</option>
+                    <option value="7">7. Air Sample 6</option>
+                    <option value="8">8. Processing Area</option>
+                    <option value="9">9. Water Sample 1</option>
+                    <option value="10">10. Water Sample 2</option>
+                    <option value="11">11. Eco Bag</option>
+                    <option value="12">12. Planting Mangrove</option>
+                </select>
+            </div>
 
             <ul class="feature-list">
                 <li class="active" onclick="changeImage(0, this)">
